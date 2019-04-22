@@ -1,0 +1,37 @@
+body {
+  background-color: #ffd966;
+  background-image: url("https://www.transparenttextures.com/patterns/merely-cubed.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  margin: 50px;
+  }
+
+.header { grid-area: header; }
+
+.navigation { grid-area: menu; }
+
+.main { grid-area: main; }
+
+.right { grid-area: right; }
+
+.footer { grid-area: footer; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 30px;
+  background-color: #003399;
+}
+
+.grid-container > div {
+  background-color: #00bbff;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+}
